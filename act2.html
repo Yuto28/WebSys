@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Flexbox Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif; 
+      }
+  
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: auto;
+      }
+  
+      .gallery-item {
+        flex: 0 0 33.33%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        justify-content: center;
+        flex-direction: column;
+      }
+  
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        cursor: pointer;
+      }
+  
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+  
+      .caption {
+        text-align: center;
+        margin-top: 10px;
+        color: #333; 
+  
+      button {
+        color: #333;
+        font-size: medium;
+        cursor: pointer;
+        background-color: #ddd; 
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+  
+      button:hover {
+        background-color: #bbb; 
+      }
+    </style>
+  </head>
+  
+<body>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://images.pexels.com/photos/12389811/pexels-photo-12389811.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+      <p class="caption">Juice</p></br>
+      <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.pexels.com/photos/9710988/pexels-photo-9710988.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 2">
+      <p class="caption">Person</p>
+      <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19581395/pexels-photo-19581395/free-photo-of-let-s-move.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 3">
+        <p class="caption">Church</p>
+        <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19809370/pexels-photo-19809370/free-photo-of-an-aerial-view-of-a-small-island-with-umbrellas-and-chairs.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Vacation</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19850346/pexels-photo-19850346/free-photo-of-an-amazing-nature.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Forest</p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19061689/pexels-photo-19061689/free-photo-of-green-water-surface.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Sea</p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/10255616/pexels-photo-10255616.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Hangout</p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19910561/pexels-photo-19910561/free-photo-of-a-large-building-with-a-clock-on-the-side-of-it.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Outside</p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/16307204/pexels-photo-16307204/free-photo-of-a-woman-sitting-on-a-chair-in-front-of-a-window.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Dark</p>
+        <button type="button">Click Me</button>
+    </div>
+  </div>
+
+</body>
+</html>
