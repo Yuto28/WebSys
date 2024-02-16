@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improved CSS Grid Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxRsVeQx032cSbIrylwtGFUD5os4nEuBx3RA&usqp=CAU);
+    }
+
+    .gallery {
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 10px;
+    }
+
+    .gallery-item {
+      box-sizing: border-box;
+      padding: 10px;
+      position: relative; /* Required for overlays */
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Caption below image */
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    button {
+      color: #333;
+      font-size: medium;
+      cursor: pointer;
+      background-color: #ddd;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    
+    }
+
+    button:hover {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <H1>
+    CSS GRID Gallery
+  </H1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://images.pexels.com/photos/12389811/pexels-photo-12389811.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+      <p class="caption">Juice</p>
+        <p class="description">
+            This photo captures the refreshing coolness of a glass of freshly squeezed juice.
+        </p>
+      <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.pexels.com/photos/9710988/pexels-photo-9710988.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 2">
+      <p class="caption">Person</p>
+        <p class="description">
+          This image features a person in an everyday setting.
+        </p>
+      <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19581395/pexels-photo-19581395/free-photo-of-let-s-move.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 3">
+        <p class="caption">Church</p>
+          <p class="description">
+            A photo of a church building with an interesting perspective.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19809370/pexels-photo-19809370/free-photo-of-an-aerial-view-of-a-small-island-with-umbrellas-and-chairs.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Vacation</p>
+          <p class="description">
+            An aerial view of a small island with umbrellas and chairs, creating a vacation atmosphere.
+          </p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19850346/pexels-photo-19850346/free-photo-of-an-amazing-nature.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Forest</p>
+          <p class="description">
+            A stunning view of a lush forest, showcasing the beauty of nature.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19061689/pexels-photo-19061689/free-photo-of-green-water-surface.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Sea</p>
+          <p class="description">
+            A serene image of the green water surface, evoking a sense of calmness.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/10255616/pexels-photo-10255616.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Hangout</p>
+          <p class="description">
+            A cozy hangout spot, inviting you to relax and unwind.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/19910561/pexels-photo-19910561/free-photo-of-a-large-building-with-a-clock-on-the-side-of-it.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Outside</p>
+          <p class="description">
+            A large building with a clock on the side, situated outdoors.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/16307204/pexels-photo-16307204/free-photo-of-a-woman-sitting-on-a-chair-in-front-of-a-window.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Image 1">
+        <p class="caption">Dark</p>
+          <p class="description">
+            A woman sitting on a chair in front of a window, with dim lighting creating a moody atmosphere.
+          </p>
+        <button type="button">Click Me</button>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.pexels.com/photos/17604370/pexels-photo-17604370/free-photo-of-beautiful-woman-sitting-under-a-tree.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+      <p class="caption">Beautiful Woman Sitting under a Tree</p>
+        <p class="description">
+          A beautiful woman enjoying a peaceful moment under a tree, surrounded by nature's beauty.
+        </p>
+      <button type="button">Click Me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/20204362/pexels-photo-20204362/free-photo-of-ashville-appalachian-mountains-north-carolina.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+    <p class="caption">Ashville Appalachian Mountains North Carolina</p>
+      <p class="description">
+        A picturesque view of the Appalachian Mountains in North Carolina, showcasing their beauty and grandeur.
+      </p>
+    <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/15868390/pexels-photo-15868390/free-photo-of-bag-of-tulips.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Bag of Tulips</p>
+    <p class="description">
+      A close-up shot of a bag filled with vibrant tulips, representing the beauty of springtime.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/11728795/pexels-photo-11728795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Close-Up Shot of a Woman</p>
+    <p class="description">
+      A close-up shot of a woman, capturing her unique features and expression.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/17698590/pexels-photo-17698590/free-photo-of-woman-in-dress-holding-big-leaves.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Woman in Dress Holding Big Leaves</p>
+    <p class="description">
+      A woman wearing a dress, holding big leaves, creating a striking visual contrast.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/16424677/pexels-photo-16424677/free-photo-of-woman-in-a-white-dress-with-embroidery-on-a-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Woman in a White Dress with Embroidery on a Field</p>
+    <p class="description">
+      A woman wearing a white dress with intricate embroidery, standing in a field, exuding elegance and grace.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/19684417/pexels-photo-19684417/free-photo-of-coffee-cup-on-table-near-plant-by-wall.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Coffee Cup on Table near Plant by Wall</p>
+    <p class="description">
+      A cozy scene with a coffee cup placed on a table near a plant by the wall, inviting you to enjoy a peaceful moment.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/18118946/pexels-photo-18118946/free-photo-of-colibri.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Colibrí</p>
+    <p class="description">
+      A captivating image of a hummingbird (Colibrí in Spanish) captured in flight, showcasing its vibrant colors and graceful movement.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/19908845/pexels-photo-19908845/free-photo-of-all-to-herself.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">all to herself</p>
+    <p class="description">
+      A woman enjoying a moment of solitude, immersed in her thoughts and surroundings.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/18189590/pexels-photo-18189590/free-photo-of-red-panda-sitting-on-a-cut-tree-trunk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Red Panda Sitting on a Cut Tree Trunk</p>
+    <p class="description">
+      A charming red panda sitting on a cut tree trunk, looking adorable and curious.
+</p>
+  <button type="button">Click Me</button>
+</div>
+<div class="gallery-item">
+  <img src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+  <p class="caption">Scenic View of a Beach</p>
+    <p class="description">
+      A breathtaking scenic view of a beach, with golden sand, azure waters, and a clear blue sky, inviting you to relax and unwind.
+</p>
+  <button type="button">Click Me</button>
+</div>
+
+  </div>
+
+</body>
+</html>
